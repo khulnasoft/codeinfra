@@ -1,0 +1,13 @@
+{
+  "emittedFiles": [
+    "world/doc.go",
+    "world/init.go",
+    "world/internal/codeinfraUtilities.go",
+    "world/internal/codeinfraVersion.go",
+    "world/provider.go",
+    "world/codeinfra-plugin.json",
+    "world/codeinfraTypes.go",
+    "world/universe.go",
+    "world/worldMap.go"
+  ]
+}

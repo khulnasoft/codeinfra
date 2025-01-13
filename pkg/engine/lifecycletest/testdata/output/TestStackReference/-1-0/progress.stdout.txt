@@ -1,0 +1,13 @@
+<{%fg 13%}><{%bold%}>View Live: <{%underline%}><{%fg 12%}>http://example.com<{%reset%}>
+
+
+ <{%bold%}><{%fg 3%}>~ <{%reset%}> codeinfra:providers:codeinfra default <{%bold%}><{%fg 3%}>refreshing<{%reset%}> 
+ <{%reset%}>  <{%reset%}> codeinfra:providers:codeinfra default <{%reset%}><{%reset%}> 
+ <{%bold%}><{%fg 3%}>~ <{%reset%}> codeinfra:codeinfra:StackReference other <{%bold%}><{%fg 3%}>refreshing<{%reset%}> 
+ <{%reset%}>  <{%reset%}> codeinfra:codeinfra:StackReference other <{%reset%}><{%reset%}> 
+ <{%reset%}>  <{%reset%}> codeinfra:codeinfra:Stack project-stack <{%reset%}><{%reset%}> 
+<{%fg 13%}><{%bold%}>Resources:<{%reset%}>
+    1 unchanged
+
+<{%fg 13%}><{%bold%}>Duration:<{%reset%}> 1s
+

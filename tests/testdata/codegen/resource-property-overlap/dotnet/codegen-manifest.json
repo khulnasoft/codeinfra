@@ -1,0 +1,11 @@
+{
+  "emittedFiles": [
+    "Provider.cs",
+    "Codeinfra.Example.csproj",
+    "README.md",
+    "Rec.cs",
+    "Utilities.cs",
+    "logo.png",
+    "codeinfra-plugin.json"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "codeinfra-main",
+  "dependencies": {
+    "@codeinfra/codeinfra": "latest"
+  }
+}

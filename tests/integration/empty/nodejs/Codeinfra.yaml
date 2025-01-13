@@ -1,0 +1,3 @@
+name: emptyjs
+description: An empty Node.js Codeinfra program.
+runtime: nodejs

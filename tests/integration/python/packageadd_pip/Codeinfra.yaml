@@ -1,0 +1,11 @@
+name: packageadd_pip
+description: A minimal Google Cloud Python Codeinfra program
+runtime:
+  name: python
+  options:
+    toolchain: pip
+    virtualenv: venv
+config:
+  codeinfra:tags:
+    value:
+      codeinfra:template: gcp-python

@@ -1,0 +1,15 @@
+{
+  "emittedFiles": [
+    "codeinfra_cloudinit/README.md",
+    "codeinfra_cloudinit/__init__.py",
+    "codeinfra_cloudinit/_inputs.py",
+    "codeinfra_cloudinit/_utilities.py",
+    "codeinfra_cloudinit/config.py",
+    "codeinfra_cloudinit/get_config.py",
+    "codeinfra_cloudinit/outputs.py",
+    "codeinfra_cloudinit/provider.py",
+    "codeinfra_cloudinit/codeinfra-plugin.json",
+    "codeinfra_cloudinit/py.typed",
+    "pyproject.toml"
+  ]
+}

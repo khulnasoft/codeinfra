@@ -1,0 +1,16 @@
+{
+  "emittedFiles": [
+    "plant-provider/doc.go",
+    "plant-provider/init.go",
+    "plant-provider/internal/codeinfraUtilities.go",
+    "plant-provider/internal/codeinfraVersion.go",
+    "plant-provider/provider.go",
+    "plant-provider/codeinfra-plugin.json",
+    "plant-provider/codeinfraEnums.go",
+    "plant-provider/codeinfraTypes.go",
+    "plant-provider/tree/v1/init.go",
+    "plant-provider/tree/v1/nursery.go",
+    "plant-provider/tree/v1/codeinfraEnums.go",
+    "plant-provider/tree/v1/rubberTree.go"
+  ]
+}

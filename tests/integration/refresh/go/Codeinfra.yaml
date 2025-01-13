@@ -1,0 +1,5 @@
+name: refreshgo
+description: An empty Go Codeinfra program with the refresh option set.
+runtime: go
+options:
+    refresh: always

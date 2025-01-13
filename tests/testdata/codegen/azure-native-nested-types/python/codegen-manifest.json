@@ -1,0 +1,14 @@
+{
+  "emittedFiles": [
+    "codeinfra_azure_native/README.md",
+    "codeinfra_azure_native/__init__.py",
+    "codeinfra_azure_native/_utilities.py",
+    "codeinfra_azure_native/documentdb/__init__.py",
+    "codeinfra_azure_native/documentdb/outputs.py",
+    "codeinfra_azure_native/documentdb/sql_resource_sql_container.py",
+    "codeinfra_azure_native/provider.py",
+    "codeinfra_azure_native/codeinfra-plugin.json",
+    "codeinfra_azure_native/py.typed",
+    "setup.py"
+  ]
+}

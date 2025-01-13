@@ -1,0 +1,16 @@
+{
+    "name": "",
+    "version": "",
+    "dependencies": {
+        "@codeinfra/azure-native": "^1.29.0",
+        "@codeinfra/codeinfra": "latest",
+        "@codeinfra/random": "^4.11.2"
+    },
+    "devDependencies": {
+        "@types/node": "^17.0.14",
+        "typescript": "^4.5.5"
+    },
+    "codeinfra": {
+        "resource": false
+    }
+}

@@ -1,0 +1,11 @@
+{
+  "emittedFiles": [
+    "Provider.cs",
+    "Codeinfra.Registrygeoreplication.csproj",
+    "README.md",
+    "RegistryGeoReplication.cs",
+    "Utilities.cs",
+    "logo.png",
+    "codeinfra-plugin.json"
+  ]
+}

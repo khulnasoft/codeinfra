@@ -1,0 +1,13 @@
+{
+  "emittedFiles": [
+    "mypkg/doc.go",
+    "mypkg/getAmiIds.go",
+    "mypkg/init.go",
+    "mypkg/internal/codeinfraUtilities.go",
+    "mypkg/internal/codeinfraVersion.go",
+    "mypkg/listStorageAccountKeys.go",
+    "mypkg/provider.go",
+    "mypkg/codeinfra-plugin.json",
+    "mypkg/codeinfraTypes.go"
+  ]
+}

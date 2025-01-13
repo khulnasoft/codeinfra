@@ -1,0 +1,14 @@
+{
+  "emittedFiles": [
+    "credentials/config/config.go",
+    "credentials/doc.go",
+    "credentials/init.go",
+    "credentials/internal/codeinfraUtilities.go",
+    "credentials/internal/codeinfraVersion.go",
+    "credentials/provider.go",
+    "credentials/codeinfra-plugin.json",
+    "credentials/codeinfraEnums.go",
+    "credentials/codeinfraTypes.go",
+    "credentials/user.go"
+  ]
+}

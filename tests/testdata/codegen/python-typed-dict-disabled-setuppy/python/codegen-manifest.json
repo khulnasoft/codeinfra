@@ -1,0 +1,15 @@
+{
+  "emittedFiles": [
+    "codeinfra_typedDictDisabledExample/README.md",
+    "codeinfra_typedDictDisabledExample/__init__.py",
+    "codeinfra_typedDictDisabledExample/_inputs.py",
+    "codeinfra_typedDictDisabledExample/_utilities.py",
+    "codeinfra_typedDictDisabledExample/component.py",
+    "codeinfra_typedDictDisabledExample/my_function.py",
+    "codeinfra_typedDictDisabledExample/outputs.py",
+    "codeinfra_typedDictDisabledExample/provider.py",
+    "codeinfra_typedDictDisabledExample/codeinfra-plugin.json",
+    "codeinfra_typedDictDisabledExample/py.typed",
+    "setup.py"
+  ]
+}

@@ -1,0 +1,6 @@
+[project]
+name = "uv"
+version = "0.1.0"
+description = "A Python project with an error that uses the uv toolchain."
+requires-python = ">=3.9"
+dependencies = ["codeinfra>=3.0.0,<4.0.0", "codeinfra-random>=4.0.0,<5.0.0"]

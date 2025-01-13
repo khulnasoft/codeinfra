@@ -1,0 +1,5 @@
+name: codeinfra-python-stack-truncate
+description: |
+  A Python program that errors out
+runtime: python
+main: bar/

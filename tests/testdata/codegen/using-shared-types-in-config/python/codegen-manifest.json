@@ -1,0 +1,18 @@
+{
+  "emittedFiles": [
+    "codeinfra_credentials/README.md",
+    "codeinfra_credentials/__init__.py",
+    "codeinfra_credentials/_enums.py",
+    "codeinfra_credentials/_inputs.py",
+    "codeinfra_credentials/_utilities.py",
+    "codeinfra_credentials/config/__init__.py",
+    "codeinfra_credentials/config/__init__.pyi",
+    "codeinfra_credentials/config/vars.py",
+    "codeinfra_credentials/outputs.py",
+    "codeinfra_credentials/provider.py",
+    "codeinfra_credentials/codeinfra-plugin.json",
+    "codeinfra_credentials/py.typed",
+    "codeinfra_credentials/user.py",
+    "setup.py"
+  ]
+}

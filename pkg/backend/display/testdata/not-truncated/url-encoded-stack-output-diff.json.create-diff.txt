@@ -1,0 +1,5 @@
+Configuration:
+  codeinfra:codeinfra:Stack: (same)
+    [urn=urn:codeinfra:dev::urlencodedoutput::codeinfra:codeinfra:Stack::urlencodedoutput-dev]
+    --outputs:--
+  ~ path: "%2F" => "%2f"

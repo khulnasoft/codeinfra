@@ -1,0 +1,12 @@
+{
+  "emittedFiles": [
+    "Provider.cs",
+    "Codeinfra.ProviderType.csproj",
+    "README.md",
+    "Submod/Provider.cs",
+    "Submod/README.md",
+    "Utilities.cs",
+    "logo.png",
+    "codeinfra-plugin.json"
+  ]
+}

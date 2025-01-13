@@ -1,0 +1,13 @@
+{
+  "emittedFiles": [
+    "codeinfra_my8110/README.md",
+    "codeinfra_my8110/__init__.py",
+    "codeinfra_my8110/_enums.py",
+    "codeinfra_my8110/_utilities.py",
+    "codeinfra_my8110/example_func.py",
+    "codeinfra_my8110/provider.py",
+    "codeinfra_my8110/codeinfra-plugin.json",
+    "codeinfra_my8110/py.typed",
+    "setup.py"
+  ]
+}

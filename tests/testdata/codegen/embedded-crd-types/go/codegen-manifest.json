@@ -1,0 +1,12 @@
+{
+  "emittedFiles": [
+    "foo/component.go",
+    "foo/crd.k8s.amazonaws.com/v1alpha1/codeinfraTypes.go",
+    "foo/doc.go",
+    "foo/init.go",
+    "foo/internal/codeinfraUtilities.go",
+    "foo/internal/codeinfraVersion.go",
+    "foo/provider.go",
+    "foo/codeinfra-plugin.json"
+  ]
+}

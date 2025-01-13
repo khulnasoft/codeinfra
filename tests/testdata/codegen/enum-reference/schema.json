@@ -1,0 +1,41 @@
+{
+    "name": "example",
+    "resources": {
+        "example:myModule:IamResource": {
+            "inputProperties": {
+                "config": {
+                    "$ref": "/google-native/v0.18.2/schema.json#/types/google-native:iam%2Fv1:AuditConfig"
+                }
+            },
+            "isComponent": true
+        }
+    },
+    "language": {
+        "python": {
+            "requires": {
+                "codeinfra": ">=3.0.0,<4.0.0",
+                "codeinfra-aws": ">=4.37.1,<5.0.0"
+            }
+        },
+        "csharp": {
+            "packageReferences": {
+                "Codeinfra": "3.71.0",
+                "Codeinfra.GoogleNative": "0.20.0"
+            }
+        },
+        "nodejs": {
+            "dependencies": {
+                "@codeinfra/codeinfra": "^3.12",
+                "@codeinfra/google-native": "^0.20.0"
+            },
+            "devDependencies": {
+                "typescript": "^3.7.0",
+                "@types/node": "ts3.7"
+            }
+        },
+        "go": {
+            "importBasePath": "enum-reference/example",
+            "generateExtraInputTypes": true
+        }
+    }
+}

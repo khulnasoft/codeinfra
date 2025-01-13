@@ -1,0 +1,7 @@
+name: test-install
+description: Run codeinfra install via automation api
+runtime:
+  name: python
+  options:
+    toolchain: pip
+    virtualenv: venv

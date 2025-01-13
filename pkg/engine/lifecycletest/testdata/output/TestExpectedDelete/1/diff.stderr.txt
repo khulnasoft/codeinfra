@@ -1,0 +1,1 @@
+<{%fg 1%}>error: <{%reset%}><{%reset%}>resource urn:codeinfra:test::test::pkgA:m:typA::resB violates plan: resource unexpectedly not deleted<{%reset%}>

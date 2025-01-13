@@ -1,0 +1,21 @@
+{
+    "name": "@codeinfra/example",
+    "version": "${VERSION}",
+    "scripts": {
+        "build": "tsc",
+        "install": "node scripts/install-codeinfra-plugin.js resource example 3.2.1"
+    },
+    "dependencies": {
+        "@codeinfra/google-native": "^0.20.0",
+        "@codeinfra/codeinfra": "^3.12"
+    },
+    "devDependencies": {
+        "@types/node": "ts3.7",
+        "typescript": "^3.7.0"
+    },
+    "codeinfra": {
+        "resource": true,
+        "name": "example",
+        "version": "3.2.1"
+    }
+}

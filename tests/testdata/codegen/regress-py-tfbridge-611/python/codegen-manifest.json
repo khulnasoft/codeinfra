@@ -1,0 +1,16 @@
+{
+  "emittedFiles": [
+    "codeinfra_aws/README.md",
+    "codeinfra_aws/__init__.py",
+    "codeinfra_aws/_utilities.py",
+    "codeinfra_aws/provider.py",
+    "codeinfra_aws/codeinfra-plugin.json",
+    "codeinfra_aws/py.typed",
+    "codeinfra_aws/x/__init__.py",
+    "codeinfra_aws/x/_inputs.py",
+    "codeinfra_aws/x/iam/__init__.py",
+    "codeinfra_aws/x/iam/get_policy_document.py",
+    "codeinfra_aws/x/outputs.py",
+    "setup.py"
+  ]
+}

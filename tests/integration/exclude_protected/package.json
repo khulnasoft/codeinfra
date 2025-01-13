@@ -1,0 +1,9 @@
+{
+  "name": "test-protect",
+  "devDependencies": {
+    "@types/node": "^10.0.0"
+  },
+  "peerDependencies": {
+    "@codeinfra/codeinfra": "^3.0.0"
+  }
+}

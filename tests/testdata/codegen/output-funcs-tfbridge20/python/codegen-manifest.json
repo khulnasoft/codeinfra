@@ -1,0 +1,15 @@
+{
+  "emittedFiles": [
+    "codeinfra_mypkg/README.md",
+    "codeinfra_mypkg/__init__.py",
+    "codeinfra_mypkg/_inputs.py",
+    "codeinfra_mypkg/_utilities.py",
+    "codeinfra_mypkg/get_ami_ids.py",
+    "codeinfra_mypkg/list_storage_account_keys.py",
+    "codeinfra_mypkg/outputs.py",
+    "codeinfra_mypkg/provider.py",
+    "codeinfra_mypkg/codeinfra-plugin.json",
+    "codeinfra_mypkg/py.typed",
+    "setup.py"
+  ]
+}

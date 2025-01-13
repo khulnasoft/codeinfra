@@ -1,0 +1,7 @@
+name: minimal
+description: A minimal Codeinfra program.
+runtime:
+  name: nodejs
+  options:
+    typescript: false
+

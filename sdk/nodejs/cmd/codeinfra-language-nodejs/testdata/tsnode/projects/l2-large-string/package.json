@@ -1,0 +1,11 @@
+{
+	"name": "l2-large-string",
+	"devDependencies": {
+		"@types/node": "^14"
+	},
+	"dependencies": {
+		"typescript": "^4.0.0",
+		"@codeinfra/codeinfra": "ROOT/artifacts/codeinfra-codeinfra-CORE.VERSION.tgz",
+		"@codeinfra/large": "ROOT/artifacts/codeinfra-large-4.3.2.tgz"
+	}
+}

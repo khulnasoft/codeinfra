@@ -1,0 +1,13 @@
+{
+  "emittedFiles": [
+    "my8110/doc.go",
+    "my8110/exampleFunc.go",
+    "my8110/init.go",
+    "my8110/internal/codeinfraUtilities.go",
+    "my8110/internal/codeinfraVersion.go",
+    "my8110/provider.go",
+    "my8110/codeinfra-plugin.json",
+    "my8110/codeinfraEnums.go",
+    "my8110/codeinfraTypes.go"
+  ]
+}

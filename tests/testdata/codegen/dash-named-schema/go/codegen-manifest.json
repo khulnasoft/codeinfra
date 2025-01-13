@@ -1,0 +1,14 @@
+{
+  "emittedFiles": [
+    "foo/doc.go",
+    "foo/init.go",
+    "foo/internal/codeinfraUtilities.go",
+    "foo/internal/codeinfraVersion.go",
+    "foo/provider.go",
+    "foo/codeinfra-plugin.json",
+    "foo/codeinfraTypes.go",
+    "foo/submodule1/fooencryptedBarClass.go",
+    "foo/submodule1/init.go",
+    "foo/submodule1/moduleResource.go"
+  ]
+}

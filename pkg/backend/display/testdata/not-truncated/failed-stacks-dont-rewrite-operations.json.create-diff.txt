@@ -1,0 +1,9 @@
+Configuration:
+  codeinfra:codeinfra:Stack: (same)
+    [urn=urn:codeinfra:dev::test::codeinfra:codeinfra:Stack::test-dev]
+    ~ codeinfra-python:dynamic:Resource: (update)
+        [id=quux2]
+        [urn=urn:codeinfra:dev::test::codeinfra-python:dynamic:Resource::test-x]
+    --codeinfra-python:dynamic:Resource: (delete-replaced)
+        [id=foo]
+        [urn=urn:codeinfra:dev::test::codeinfra-python:dynamic:Resource::test-r]

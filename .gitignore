@@ -1,0 +1,90 @@
+*.swp
+**/vendor/
+**/node_modules/
+**/bin
+**/.vscode/**/*
+**/.vs/
+**/.ionide/
+**/.idea/
+**/.DS_Store
+coverage.cov
+*.coverprofile
+*.cov
+**/obj/
+coverage/
+venv/
+.envrc
+# Ignore VSCode created solution file
+/codeinfra.sln
+.mono
+
+# Ignore user-provided go.work files.
+/go.work
+/go.work.sum
+
+**/.idea/
+*.iml
+.yarn
+# VSCode creates this binary when running tests in the debugger
+**/debug.test
+
+# Check in vscode settings for this workspace. This is so we can save common settings like setting go build tags to use by default.
+!**/.vscode/settings.json
+
+# Go tests run "in tree" and this folder will linger if they fail (the integration test framework cleans
+# it up when they pass.)
+**/command-output/
+
+# Likewise, we don't want to keep the typechecked version of our codegen tests.
+tests/testdata/codegen/*/typecheck/**
+
+# We don't need to keep testing python __pycache__ either either
+tests/testdata/codegen/*-pp/*/*.csproj
+tests/testdata/codegen/*-pp/*/go.mod
+tests/testdata/codegen/*-pp/*/go.sum
+tests/testdata/codegen/*-pp/*/Program.cs
+tests/testdata/codegen/*-pp/*/package.json
+tests/testdata/codegen/*-pp/*/go.sum
+tests/testdata/codegen/*-pp/*/tsconfig.json
+
+# By default, we don't check in yarn.lock files
+**/yarn.lock
+
+# By default, we don't check in Pipfile.lock files
+**/Pipfile.lock
+
+# Turning on MyPy in VSCode creates this workspace local folder
+.mypy_cache
+
+# for goreleaser
+**/*.exe
+goreleaser
+codeinfra-resource-codeinfra-nodejs
+codeinfra-resource-codeinfra-python
+codeinfra-analyzer-policy
+codeinfra-analyzer-policy-python
+codeinfra-language-python-exec
+codeinfra-resource-codeinfra-nodejs.cmd
+codeinfra-resource-codeinfra-python.cmd
+codeinfra-python3-shim.cmd
+codeinfra-python-shim.cmd
+codeinfra-analyzer-policy.cmd
+codeinfra-analyzer-policy-python.cmd
+artifacts/
+goreleaser-downloads/
+goreleaser-prebuilt/
+goreleaser-lang/
+goreleaser-linux/
+goreleaser-darwin/
+goreleaser-windows/
+
+__pycache__
+.pytest_cache
+
+# File targets for make
+*.phony
+
+# Temporary files
+*.tmp
+test-results/
+yarn-error.log

@@ -1,0 +1,6 @@
+name: codeinfra-python-poetry
+description: A simple Python Codeinfra program that uses Poetry.
+runtime:
+  name: python
+  options:
+    toolchain: poetry

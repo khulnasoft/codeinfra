@@ -1,0 +1,12 @@
+{
+    "name": "npm-and-yarn-workspaces",
+    "description": "A project that uses npm and yarn workspaces, but the nested codeinfra project `infra` is NOT a workspace",
+    "private": true,
+    "workspaces": [
+        "doesnt-exist/*"
+    ],
+    "dependencies": {
+        "@codeinfra/codeinfra": "^3.104.2",
+        "@codeinfra/aws": "^6.0.0"
+    }
+}

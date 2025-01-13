@@ -1,0 +1,7 @@
+name: codeinfra-excepthook-bad-log
+description: A test case for https://github.com/khulnasoft/codeinfra/issues/18176
+runtime:
+  name: python
+  options:
+    toolchain: pip
+    virtualenv: venv

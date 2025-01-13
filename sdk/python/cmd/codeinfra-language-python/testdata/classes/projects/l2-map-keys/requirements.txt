@@ -1,0 +1,6 @@
+ROOT/artifacts/codeinfra-CORE.VERSION-py3-none-any.whl
+ROOT/artifacts/codeinfra_plain-13.0.0-py3-none-any.whl
+ROOT/artifacts/codeinfra_primitive-7.0.0-py3-none-any.whl
+ROOT/artifacts/codeinfra_primitive_ref-11.0.0-py3-none-any.whl
+ROOT/artifacts/codeinfra_ref_ref-12.0.0-py3-none-any.whl
+pyright

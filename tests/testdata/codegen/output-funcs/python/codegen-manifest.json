@@ -1,0 +1,23 @@
+{
+  "emittedFiles": [
+    "codeinfra_mypkg/README.md",
+    "codeinfra_mypkg/__init__.py",
+    "codeinfra_mypkg/_inputs.py",
+    "codeinfra_mypkg/_utilities.py",
+    "codeinfra_mypkg/func_with_all_optional_inputs.py",
+    "codeinfra_mypkg/func_with_const_input.py",
+    "codeinfra_mypkg/func_with_default_value.py",
+    "codeinfra_mypkg/func_with_dict_param.py",
+    "codeinfra_mypkg/func_with_empty_outputs.py",
+    "codeinfra_mypkg/func_with_list_param.py",
+    "codeinfra_mypkg/get_bastion_shareable_link.py",
+    "codeinfra_mypkg/get_client_config.py",
+    "codeinfra_mypkg/get_integration_runtime_object_metadatum.py",
+    "codeinfra_mypkg/list_storage_account_keys.py",
+    "codeinfra_mypkg/outputs.py",
+    "codeinfra_mypkg/provider.py",
+    "codeinfra_mypkg/codeinfra-plugin.json",
+    "codeinfra_mypkg/py.typed",
+    "setup.py"
+  ]
+}

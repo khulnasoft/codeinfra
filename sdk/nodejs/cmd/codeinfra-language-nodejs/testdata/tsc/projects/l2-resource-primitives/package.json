@@ -1,0 +1,11 @@
+{
+	"name": "l2-resource-primitives",
+	"devDependencies": {
+		"@types/node": "^14"
+	},
+	"dependencies": {
+		"typescript": "^4.0.0",
+		"@codeinfra/codeinfra": "ROOT/artifacts/codeinfra-codeinfra-CORE.VERSION.tgz",
+		"@codeinfra/primitive": "ROOT/artifacts/codeinfra-primitive-7.0.0.tgz"
+	}
+}

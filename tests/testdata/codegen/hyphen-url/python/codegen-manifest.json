@@ -1,0 +1,12 @@
+{
+  "emittedFiles": [
+    "codeinfra_registrygeoreplication/README.md",
+    "codeinfra_registrygeoreplication/__init__.py",
+    "codeinfra_registrygeoreplication/_utilities.py",
+    "codeinfra_registrygeoreplication/provider.py",
+    "codeinfra_registrygeoreplication/codeinfra-plugin.json",
+    "codeinfra_registrygeoreplication/py.typed",
+    "codeinfra_registrygeoreplication/registry_geo_replication.py",
+    "setup.py"
+  ]
+}

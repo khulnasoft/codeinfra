@@ -1,0 +1,1 @@
+<{%fg 1%}>error: <{%reset%}><{%reset%}>Resource 'urn:codeinfra:test::test::component$pkgA:m:typA::child' depends on 'urn:codeinfra:test::test::component::parent' which was was not specified in --target list.<{%reset%}>

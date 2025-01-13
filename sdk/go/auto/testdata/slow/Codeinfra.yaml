@@ -1,0 +1,7 @@
+name: slow
+description: A minimal Go Codeinfra program
+runtime: go
+config:
+  codeinfra:tags:
+    value:
+      codeinfra:template: go

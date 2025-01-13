@@ -1,0 +1,19 @@
+{
+    "name": "@codeinfra/xyz",
+    "version": "${VERSION}",
+    "scripts": {
+        "build": "tsc"
+    },
+    "dependencies": {
+        "@codeinfra/aws": "^3.7.0",
+        "@codeinfra/codeinfra": "^3.12"
+    },
+    "devDependencies": {
+        "@types/node": "^14",
+        "typescript": "^3.7.0"
+    },
+    "codeinfra": {
+        "resource": true,
+        "name": "xyz"
+    }
+}

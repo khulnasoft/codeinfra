@@ -1,0 +1,19 @@
+{
+    "name": "@codeinfra/registrygeoreplication",
+    "version": "${VERSION}",
+    "scripts": {
+        "build": "tsc"
+    },
+    "dependencies": {
+        "@codeinfra/azure-native": "^1.28.0",
+        "@codeinfra/codeinfra": "^3.7.0"
+    },
+    "devDependencies": {
+        "@types/node": "^14",
+        "typescript": "^3.7.0"
+    },
+    "codeinfra": {
+        "resource": true,
+        "name": "registrygeoreplication"
+    }
+}

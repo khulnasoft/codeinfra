@@ -1,0 +1,10 @@
+{
+  "name": "sourcemap-in-program",
+  "main": "index.js",
+  "dependencies": {
+    "@codeinfra/codeinfra": "latest"
+  },
+  "scripts": {
+    "build": "tsc index.ts --sourceMap"
+  }
+}

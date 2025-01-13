@@ -1,0 +1,16 @@
+Configuration:
+  codeinfra:codeinfra:Stack: (same)
+    [urn=urn:codeinfra:dev::codeinfra-stack-output-diff::codeinfra:codeinfra:Stack::codeinfra-stack-output-diff-dev]
+    --outputs:--
+    vehicles: {
+        taxi: {
+            color: "yellow"
+            size : "big"
+            urn  : "urn:codeinfra:dev::codeinfra-stack-output-diff::some:demo:Taxi::taxi"
+        }
+        urn : "urn:codeinfra:dev::codeinfra-stack-output-diff::some:demo:Vehicles::vehicles"
+    }
+      some:demo:Taxi: (same)
+        [urn=urn:codeinfra:dev::codeinfra-stack-output-diff::some:demo:Taxi::taxi]
+      some:demo:Vehicles: (same)
+        [urn=urn:codeinfra:dev::codeinfra-stack-output-diff::some:demo:Vehicles::vehicles]

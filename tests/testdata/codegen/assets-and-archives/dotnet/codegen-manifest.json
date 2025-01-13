@@ -1,0 +1,14 @@
+{
+  "emittedFiles": [
+    "GetAssets.cs",
+    "Inputs/TypeWithAssetsArgs.cs",
+    "Outputs/TypeWithAssets.cs",
+    "Provider.cs",
+    "Codeinfra.Example.csproj",
+    "README.md",
+    "ResourceWithAssets.cs",
+    "Utilities.cs",
+    "logo.png",
+    "codeinfra-plugin.json"
+  ]
+}

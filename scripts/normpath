@@ -1,0 +1,22 @@
+#!/usr/bin/env python
+
+"""Normalizes paths to work with the quirks of Bash running on Windows
+GitHub actions workers.
+
+For example, on Windows:
+
+    $ ./scripts/normpath "D:\\a\\codeinfra\\codeinfra/nuget"
+    D:\a\codeinfra\codeinfra\nuget
+
+"""
+
+import os
+import pathlib
+import sys
+
+path = sys.argv[1]
+
+if os.name == 'nt':
+    print(pathlib.PureWindowsPath(path))
+else:
+    print(pathlib.PurePosixPath(path))

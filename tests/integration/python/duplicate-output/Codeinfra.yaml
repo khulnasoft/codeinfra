@@ -1,0 +1,3 @@
+name: codeinfra-python-duplicate-output
+description: A Python program that tests returning the same output twice.
+runtime: python

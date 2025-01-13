@@ -1,0 +1,5 @@
+*.pyc
+/.codeinfra/
+/dist/
+/*.egg-info
+venv/

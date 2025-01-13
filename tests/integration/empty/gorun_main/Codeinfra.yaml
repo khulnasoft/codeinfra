@@ -1,0 +1,4 @@
+name: emptygorunmain
+description: An empty Go Codeinfra program.
+runtime: go
+main: ./gorun_main_src/

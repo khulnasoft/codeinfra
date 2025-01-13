@@ -1,0 +1,2 @@
+codeinfra
+# pyright is intentionally not installed for this test

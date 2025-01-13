@@ -1,0 +1,16 @@
+{
+  "emittedFiles": [
+    "codeinfra_myedgeorder/README.md",
+    "codeinfra_myedgeorder/__init__.py",
+    "codeinfra_myedgeorder/_enums.py",
+    "codeinfra_myedgeorder/_inputs.py",
+    "codeinfra_myedgeorder/_utilities.py",
+    "codeinfra_myedgeorder/list_configurations.py",
+    "codeinfra_myedgeorder/list_product_families.py",
+    "codeinfra_myedgeorder/outputs.py",
+    "codeinfra_myedgeorder/provider.py",
+    "codeinfra_myedgeorder/codeinfra-plugin.json",
+    "codeinfra_myedgeorder/py.typed",
+    "setup.py"
+  ]
+}

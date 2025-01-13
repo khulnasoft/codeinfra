@@ -1,0 +1,12 @@
+{
+  "emittedFiles": [
+    "Enums.cs",
+    "ExampleFunc.cs",
+    "Provider.cs",
+    "Codeinfra.My8110.csproj",
+    "README.md",
+    "Utilities.cs",
+    "logo.png",
+    "codeinfra-plugin.json"
+  ]
+}

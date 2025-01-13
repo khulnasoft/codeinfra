@@ -1,0 +1,16 @@
+{
+  "emittedFiles": [
+    "codeinfra_foo/README.md",
+    "codeinfra_foo/__init__.py",
+    "codeinfra_foo/_utilities.py",
+    "codeinfra_foo/component.py",
+    "codeinfra_foo/crd_k8s_amazonaws_com/__init__.py",
+    "codeinfra_foo/crd_k8s_amazonaws_com/v1alpha1/__init__.py",
+    "codeinfra_foo/crd_k8s_amazonaws_com/v1alpha1/_inputs.py",
+    "codeinfra_foo/crd_k8s_amazonaws_com/v1alpha1/outputs.py",
+    "codeinfra_foo/provider.py",
+    "codeinfra_foo/codeinfra-plugin.json",
+    "codeinfra_foo/py.typed",
+    "setup.py"
+  ]
+}

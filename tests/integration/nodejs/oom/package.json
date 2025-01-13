@@ -1,0 +1,6 @@
+{
+  "name": "oom",
+  "peerDependencies": {
+    "@codeinfra/codeinfra": "^3.0.0"
+  }
+}

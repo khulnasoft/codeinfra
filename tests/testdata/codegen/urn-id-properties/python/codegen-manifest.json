@@ -1,0 +1,14 @@
+{
+  "emittedFiles": [
+    "codeinfra_urnid/README.md",
+    "codeinfra_urnid/__init__.py",
+    "codeinfra_urnid/_utilities.py",
+    "codeinfra_urnid/outputs.py",
+    "codeinfra_urnid/provider.py",
+    "codeinfra_urnid/codeinfra-plugin.json",
+    "codeinfra_urnid/py.typed",
+    "codeinfra_urnid/res.py",
+    "codeinfra_urnid/test.py",
+    "setup.py"
+  ]
+}

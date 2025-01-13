@@ -1,0 +1,17 @@
+{
+  "emittedFiles": [
+    "codeinfra_example/README.md",
+    "codeinfra_example/__init__.py",
+    "codeinfra_example/_utilities.py",
+    "codeinfra_example/cat.py",
+    "codeinfra_example/dog.py",
+    "codeinfra_example/god.py",
+    "codeinfra_example/no_recursive.py",
+    "codeinfra_example/outputs.py",
+    "codeinfra_example/provider.py",
+    "codeinfra_example/codeinfra-plugin.json",
+    "codeinfra_example/py.typed",
+    "codeinfra_example/toy_store.py",
+    "setup.py"
+  ]
+}

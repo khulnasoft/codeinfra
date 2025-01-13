@@ -1,0 +1,12 @@
+{
+  "emittedFiles": [
+    "example/conditionalAccessPolicy.go",
+    "example/doc.go",
+    "example/init.go",
+    "example/internal/codeinfraUtilities.go",
+    "example/internal/codeinfraVersion.go",
+    "example/provider.go",
+    "example/codeinfra-plugin.json",
+    "example/codeinfraTypes.go"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+    "name": "Codeinfra",
+
+    "build": {
+        "dockerfile": "Dockerfile",
+        "args": {
+            "USER_NAME": "user",
+            "USER_UID": "1000"
+        }
+    },
+
+    "containerEnv": {
+        "CODEINFRA_ACCESS_TOKEN": "${localEnv:CODEINFRA_ACCESS_TOKEN}",
+        "CODEINFRA_TEST_ORG": "${localEnv:CODEINFRA_TEST_ORG}"
+    },
+
+    "remoteUser": "user",
+
+    "extensions": ["golang.go", "ms-dotnettools.csharp", "ms-python.python", "formulahendry.dotnet-test-explorer"],
+
+    "postCreateCommand": "make ensure",
+
+    "settings": {
+        "extensions.ignoreRecommendations": true
+    }
+}

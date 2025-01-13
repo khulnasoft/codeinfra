@@ -1,0 +1,28 @@
+View in Browser (Ctrl+O): link
+
+     Type                   Name                          Status     Info
+     codeinfra:codeinfra:Stack    codeinfra-stack-output-diff-dev             1 message
+     ├─ some:demo:Taxi      taxi                                     
+     └─ some:demo:Vehicles  vehicles                                 
+
+Diagnostics:
+  codeinfra:codeinfra:Stack (codeinfra-stack-output-diff-dev):
+    Configuration:
+
+Outputs:
+  ~ vehicles: {
+      + @isCodeinfraResource: true
+      ~ taxi             : {
+          + @isCodeinfraResource: true
+            color            : "yellow"
+            size             : "big"
+            urn              : "urn:codeinfra:dev::codeinfra-stack-output-diff::some:demo:Taxi::taxi"
+        }
+        urn              : "urn:codeinfra:dev::codeinfra-stack-output-diff::some:demo:Vehicles::vehicles"
+    }
+
+Resources:
+    3 unchanged
+
+Duration: 0s
+

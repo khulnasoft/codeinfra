@@ -1,0 +1,19 @@
+{
+  "emittedFiles": [
+    "codeinfra_configstation/README.md",
+    "codeinfra_configstation/__init__.py",
+    "codeinfra_configstation/_enums.py",
+    "codeinfra_configstation/_utilities.py",
+    "codeinfra_configstation/config/__init__.py",
+    "codeinfra_configstation/config/__init__.pyi",
+    "codeinfra_configstation/config/_inputs.py",
+    "codeinfra_configstation/config/outputs.py",
+    "codeinfra_configstation/config/vars.py",
+    "codeinfra_configstation/func_with_all_optional_inputs.py",
+    "codeinfra_configstation/outputs.py",
+    "codeinfra_configstation/provider.py",
+    "codeinfra_configstation/codeinfra-plugin.json",
+    "codeinfra_configstation/py.typed",
+    "setup.py"
+  ]
+}

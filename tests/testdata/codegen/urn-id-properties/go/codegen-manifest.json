@@ -1,0 +1,13 @@
+{
+  "emittedFiles": [
+    "urnid/doc.go",
+    "urnid/init.go",
+    "urnid/internal/codeinfraUtilities.go",
+    "urnid/internal/codeinfraVersion.go",
+    "urnid/provider.go",
+    "urnid/codeinfra-plugin.json",
+    "urnid/codeinfraTypes.go",
+    "urnid/res.go",
+    "urnid/test.go"
+  ]
+}

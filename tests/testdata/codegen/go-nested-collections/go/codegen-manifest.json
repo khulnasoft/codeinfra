@@ -1,0 +1,19 @@
+{
+  "emittedFiles": [
+    "repro/doc.go",
+    "repro/elementtype/elementType.go",
+    "repro/elementtype/init.go",
+    "repro/elementtype/codeinfraTypes.go",
+    "repro/foo.go",
+    "repro/init.go",
+    "repro/internal/codeinfraUtilities.go",
+    "repro/internal/codeinfraVersion.go",
+    "repro/overlap/consumer.go",
+    "repro/overlap/init.go",
+    "repro/overlap/someType.go",
+    "repro/overlap/someTypeMap.go",
+    "repro/provider.go",
+    "repro/codeinfra-plugin.json",
+    "repro/codeinfraTypes.go"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+    "name": "@codeinfra/urnid",
+    "version": "${VERSION}",
+    "scripts": {
+        "build": "tsc"
+    },
+    "dependencies": {
+        "@codeinfra/codeinfra": "^3.142.0"
+    },
+    "devDependencies": {
+        "@types/node": "^14",
+        "typescript": "^4.3.5"
+    },
+    "codeinfra": {
+        "resource": true,
+        "name": "urnid"
+    }
+}

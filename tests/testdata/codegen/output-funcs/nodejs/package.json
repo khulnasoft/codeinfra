@@ -1,0 +1,21 @@
+{
+    "name": "@codeinfra/mypkg",
+    "version": "${VERSION}",
+    "scripts": {
+        "build": "tsc"
+    },
+    "dependencies": {
+        "@codeinfra/codeinfra": "^3.142.0"
+    },
+    "devDependencies": {
+        "@types/mocha": "latest",
+        "@types/node": "ts4.3",
+        "mocha": "latest",
+        "ts-node": "latest",
+        "typescript": "^4.3.5"
+    },
+    "codeinfra": {
+        "resource": true,
+        "name": "mypkg"
+    }
+}

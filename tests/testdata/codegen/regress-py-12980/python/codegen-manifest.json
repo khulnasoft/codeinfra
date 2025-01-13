@@ -1,0 +1,21 @@
+{
+  "emittedFiles": [
+    "codeinfra_myPkg/README.md",
+    "codeinfra_myPkg/__init__.py",
+    "codeinfra_myPkg/_utilities.py",
+    "codeinfra_myPkg/mymod/__init__.py",
+    "codeinfra_myPkg/mymod/childa/__init__.py",
+    "codeinfra_myPkg/mymod/childa/_enums.py",
+    "codeinfra_myPkg/mymod/childa/member_a1.py",
+    "codeinfra_myPkg/mymod/childa/outputs.py",
+    "codeinfra_myPkg/mymod/childb/__init__.py",
+    "codeinfra_myPkg/mymod/childb/_enums.py",
+    "codeinfra_myPkg/mymod/childb/member_b1.py",
+    "codeinfra_myPkg/mymod/childb/member_b2.py",
+    "codeinfra_myPkg/mymod/childb/outputs.py",
+    "codeinfra_myPkg/provider.py",
+    "codeinfra_myPkg/codeinfra-plugin.json",
+    "codeinfra_myPkg/py.typed",
+    "setup.py"
+  ]
+}

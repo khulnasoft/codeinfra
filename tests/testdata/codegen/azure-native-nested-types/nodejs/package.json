@@ -1,0 +1,28 @@
+{
+    "name": "@codeinfra/azure-native",
+    "version": "${VERSION}",
+    "keywords": [
+        "codeinfra",
+        "azure",
+        "azure-native",
+        "category/cloud",
+        "kind/native"
+    ],
+    "homepage": "https://codeinfra.com",
+    "repository": "https://github.com/khulnasoft/codeinfra-azure-native",
+    "license": "Apache-2.0",
+    "scripts": {
+        "build": "tsc"
+    },
+    "dependencies": {
+        "@codeinfra/codeinfra": "^3.0.0"
+    },
+    "devDependencies": {
+        "@types/node": "^14",
+        "typescript": "^4.3.5"
+    },
+    "codeinfra": {
+        "resource": true,
+        "name": "azure-native"
+    }
+}

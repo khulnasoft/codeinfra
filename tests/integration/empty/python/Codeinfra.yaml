@@ -1,0 +1,3 @@
+name: emptypy
+description: An empty Python Codeinfra program.
+runtime: python

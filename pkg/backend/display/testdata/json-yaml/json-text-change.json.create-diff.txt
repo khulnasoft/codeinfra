@@ -1,0 +1,6 @@
+Configuration:
+~ codeinfra:codeinfra:Stack: (update)
+    [urn=urn:codeinfra:dev::codeinfra-stack-output-diff::codeinfra:codeinfra:Stack::codeinfra-stack-output-diff-dev]
+  ~ vehicles: {
+      ~ taxi: "\"{\\\"color\\\":\\\"yellow\\\"}\"" => "\"{\\\"color\\\":    \\\"yellow\\\"   }\""
+    }

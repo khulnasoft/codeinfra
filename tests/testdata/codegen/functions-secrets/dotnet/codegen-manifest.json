@@ -1,0 +1,11 @@
+{
+  "emittedFiles": [
+    "FuncWithSecrets.cs",
+    "Provider.cs",
+    "Codeinfra.Mypkg.csproj",
+    "README.md",
+    "Utilities.cs",
+    "logo.png",
+    "codeinfra-plugin.json"
+  ]
+}

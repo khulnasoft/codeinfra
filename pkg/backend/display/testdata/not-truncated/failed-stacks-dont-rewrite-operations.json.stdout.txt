@@ -1,0 +1,13 @@
+<{%reset%}>Configuration:<{%reset%}>
+<{%reset%}>  codeinfra:codeinfra:Stack: (same)
+<{%reset%}>    [urn=urn:codeinfra:dev::test::codeinfra:codeinfra:Stack::test-dev]
+<{%reset%}><{%reset%}>    <{%fg 3%}>~ codeinfra-python:dynamic:Resource: (update)
+<{%reset%}>        [id=quux2]
+<{%reset%}><{%reset%}>        [urn=urn:codeinfra:dev::test::codeinfra-python:dynamic:Resource::test-x]
+<{%reset%}><{%reset%}>    <{%fg 9%}>--codeinfra-python:dynamic:Resource: (delete-replaced)
+<{%fg 9%}>        [id=foo]
+<{%reset%}><{%fg 9%}>        [urn=urn:codeinfra:dev::test::codeinfra-python:dynamic:Resource::test-r]
+<{%reset%}><{%reset%}><{%fg 13%}><{%bold%}>Resources:<{%reset%}>
+    1 unchanged
+
+<{%fg 13%}><{%bold%}>Duration:<{%reset%}> 8s

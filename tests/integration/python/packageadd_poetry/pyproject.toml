@@ -1,0 +1,12 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool]
+[tool.poetry]
+package-mode = false
+[tool.poetry.dependencies]
+codeinfra = ">=3.0.0,<4.0.0"
+codeinfra-gcp = ">=8.0.0,<9.0.0"
+python = "^3.9"
+codeinfra-random = {path = "sdks/random"}

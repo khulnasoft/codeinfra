@@ -1,0 +1,14 @@
+{
+  "emittedFiles": [
+    "legacy_names/doc.go",
+    "legacy_names/example_resource.go",
+    "legacy_names/http_module/codeinfraTypes.go",
+    "legacy_names/init.go",
+    "legacy_names/internal/codeinfraUtilities.go",
+    "legacy_names/internal/codeinfraVersion.go",
+    "legacy_names/provider.go",
+    "legacy_names/codeinfra-plugin.json",
+    "legacy_names/codeinfraEnums.go",
+    "legacy_names/codeinfraTypes.go"
+  ]
+}

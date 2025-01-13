@@ -1,0 +1,13 @@
+{
+  "emittedFiles": [
+    "codeinfra_mongodbatlas/README.md",
+    "codeinfra_mongodbatlas/__init__.py",
+    "codeinfra_mongodbatlas/_utilities.py",
+    "codeinfra_mongodbatlas/get_custom_db_roles.py",
+    "codeinfra_mongodbatlas/outputs.py",
+    "codeinfra_mongodbatlas/provider.py",
+    "codeinfra_mongodbatlas/codeinfra-plugin.json",
+    "codeinfra_mongodbatlas/py.typed",
+    "setup.py"
+  ]
+}

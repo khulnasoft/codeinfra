@@ -1,0 +1,14 @@
+{
+  "emittedFiles": [
+    "myedgeorder/doc.go",
+    "myedgeorder/init.go",
+    "myedgeorder/internal/codeinfraUtilities.go",
+    "myedgeorder/internal/codeinfraVersion.go",
+    "myedgeorder/listConfigurations.go",
+    "myedgeorder/listProductFamilies.go",
+    "myedgeorder/provider.go",
+    "myedgeorder/codeinfra-plugin.json",
+    "myedgeorder/codeinfraEnums.go",
+    "myedgeorder/codeinfraTypes.go"
+  ]
+}

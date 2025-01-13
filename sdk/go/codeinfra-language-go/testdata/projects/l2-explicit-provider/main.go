@@ -1,0 +1,22 @@
+package main
+
+import (
+	"example.com/codeinfra-simple/sdk/go/v2/simple"
+	"github.com/khulnasoft/codeinfra/sdk/v3/go/codeinfra"
+)
+
+func main() {
+	codeinfra.Run(func(ctx *codeinfra.Context) error {
+		prov, err := simple.NewProvider(ctx, "prov", nil)
+		if err != nil {
+			return err
+		}
+		_, err = simple.NewResource(ctx, "res", &simple.ResourceArgs{
+			Value: codeinfra.Bool(true),
+		}, codeinfra.Provider(prov))
+		if err != nil {
+			return err
+		}
+		return nil
+	})
+}

@@ -1,0 +1,12 @@
+{
+  "emittedFiles": [
+    "codeinfra_mypkg/README.md",
+    "codeinfra_mypkg/__init__.py",
+    "codeinfra_mypkg/_utilities.py",
+    "codeinfra_mypkg/func_with_secrets.py",
+    "codeinfra_mypkg/provider.py",
+    "codeinfra_mypkg/codeinfra-plugin.json",
+    "codeinfra_mypkg/py.typed",
+    "setup.py"
+  ]
+}

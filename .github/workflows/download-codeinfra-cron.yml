@@ -1,0 +1,200 @@
+name: Download Codeinfra Cron
+"on":
+  workflow_dispatch: {}
+  schedule:
+    - cron: 0 8 * * *
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  macos-homebrew-install:
+    name: Install Codeinfra with Homebrew on macOS
+    runs-on: macos-13
+    steps:
+      # Workaround for https://github.com/khulnasoft/codeinfra/issues/13938
+      - name: Delete default golang installed on the runner
+        run: |
+          rm /usr/local/bin/go || true
+          rm /usr/local/bin/gofmt || true
+      - name: homedate homebrew formulae
+        run: brew update
+      - name: homebrew install
+        run: brew install codeinfra
+      - name: Codeinfra Version Details
+        id: vars
+        run: |
+          # shellcheck disable=SC2129
+          echo "installed-version=$(codeinfra version)" >> "${GITHUB_OUTPUT}"
+          echo "expected-version=v$(curl -sS https://www.codeinfra.com/latest-version)" >> "${GITHUB_OUTPUT}"
+          echo "previous-version=$(curl -sS https://raw.githubusercontent.com/khulnasoft/docs/master/data/versions.json | jq -r '.[1].version')" >> "${GITHUB_OUTPUT}"
+      - name: Error if incorrect version found
+        if: ${{ steps.vars.outputs.expected-version != steps.vars.outputs.installed-version && steps.vars.outputs.previous-version != steps.vars.outputs.installed-version}}
+        run: |
+          echo "Expected version ${{ steps.vars.outputs.expected-version }} but found ${{ steps.vars.outputs.installed-version }}"
+          exit 1
+  macOS-direct-install:
+    name: Install Codeinfra via script on macOS
+    runs-on: macos-13
+    steps:
+      - run: curl -fsSL https://get.codeinfra.com | sh
+      - run: echo "/Users/runner/.codeinfra/bin" >> "${GITHUB_PATH}"
+      - name: Codeinfra Version Details
+        id: vars
+        run: |
+          echo "installed-version=$(codeinfra version)" >> "${GITHUB_OUTPUT}"
+          echo "expected-version=v$(curl -sS https://www.codeinfra.com/latest-version)" >> "${GITHUB_OUTPUT}"
+      - run: command -v codeinfra
+      - name: Error if incorrect version found
+        if: ${{ steps.vars.outputs.expected-version != steps.vars.outputs.installed-version }}
+        run: |
+          echo "Expected version ${{ steps.vars.outputs.expected-version }} but found ${{ steps.vars.outputs.installed-version }}"
+          exit 1
+  macos-verify-download-link:
+    name: Verify Direct Download link on macOS
+    runs-on: macos-13
+    steps:
+      - name: Direct Download
+        run: curl -L -o codeinfra.tar.gz "https://get.codeinfra.com/releases/sdk/codeinfra-v$(curl -sS https://www.codeinfra.com/latest-version)-darwin-x64.tar.gz"
+      - run: ls -la
+  linux-direct-install:
+    name: Install Codeinfra via script on Ubuntu
+    runs-on: ubuntu-latest
+    steps:
+      - name: Remove existing version
+        run: sudo rm /usr/local/bin/codeinfra
+      - run: curl -fsSL https://get.codeinfra.com | sh
+      - run: echo "/home/runner/.codeinfra/bin" >> "${GITHUB_PATH}"
+      - name: Codeinfra Version Details
+        id: vars
+        run: |
+          echo "installed-version=$(codeinfra version)" >> "${GITHUB_OUTPUT}"
+          echo "expected-version=v$(curl -sS https://www.codeinfra.com/latest-version)" >> "${GITHUB_OUTPUT}"
+      - run: command -v codeinfra
+      - name: Error if incorrect version found
+        if: ${{ steps.vars.outputs.expected-version != steps.vars.outputs.installed-version }}
+        run: |
+          echo "Expected version ${{ steps.vars.outputs.expected-version }} but found ${{ steps.vars.outputs.installed-version }}"
+          exit 1
+  linux-verify-download-link:
+    name: Verify Direct Download link on Linux
+    runs-on: ubuntu-latest
+    steps:
+      - name: Direct Download
+        run: curl -L -o codeinfra.tar.gz "https://get.codeinfra.com/releases/sdk/codeinfra-v$(curl -sS https://www.codeinfra.com/latest-version)-linux-x64.tar.gz"
+      - run: ls -la
+  windows-choco-install:
+    name: Install Codeinfra with Chocolatey on Windows
+    runs-on: windows-latest
+    steps:
+      - name: choco install
+        run: choco upgrade codeinfra
+      - name: Codeinfra Version Details
+        id: vars
+        shell: bash
+        run: |
+          # shellcheck disable=SC2129
+          echo "installed-version=$(codeinfra version)" >> "${GITHUB_OUTPUT}"
+          echo "expected-version=v$(curl -sS https://www.codeinfra.com/latest-version)" >> "${GITHUB_OUTPUT}"
+          echo "previous-version=$(curl -sS https://raw.githubusercontent.com/khulnasoft/docs/master/data/versions.json | jq -r '.[1].version')" >> "${GITHUB_OUTPUT}"
+      - name: Error if incorrect version found
+        if: ${{ steps.vars.outputs.expected-version != steps.vars.outputs.installed-version && steps.vars.outputs.previous-version != steps.vars.outputs.installed-version}}
+        run: |
+          echo "Expected version ${{ steps.vars.outputs.expected-version }} but found ${{ steps.vars.outputs.installed-version }}"
+          exit 1
+  windows-winget-install:
+    name: Install Codeinfra with WinGet on Windows
+    runs-on: windows-latest
+    steps:
+      - name: Remove Pre-installed Codeinfra
+        shell: bash
+        run: |
+          if command -v "codeinfra.exe"; then
+            CODEINFRA_INSTALL_DIR=$(dirname "$(command -v "codeinfra.exe")")
+            echo "Deleting Codeinfra"
+            rm -v "$CODEINFRA_INSTALL_DIR"/codeinfra*
+          fi
+      - name: Install winget
+        uses: Cyberboss/install-winget@v1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Install Codeinfra Using WinGet
+        run: winget install codeinfra --disable-interactivity --accept-source-agreements --verbose
+      - run: echo "C:/Program Files (x86)/Codeinfra" >> "${GITHUB_PATH}"
+        shell: bash
+      - name: Codeinfra Version Details
+        id: vars
+        shell: bash
+        run: |
+          echo "installed-version=$(codeinfra version)" >> "${GITHUB_OUTPUT}"
+          echo "expected-version=v$(curl -sS https://www.codeinfra.com/latest-version)" >> "${GITHUB_OUTPUT}"
+      - name: Error if incorrect version found
+        if: ${{ steps.vars.outputs.expected-version != steps.vars.outputs.installed-version }}
+        run: |
+          echo "Expected version ${{ steps.vars.outputs.expected-version }} but found ${{ steps.vars.outputs.installed-version }}"
+          exit 1
+  windows-direct-install:
+    name: Install Codeinfra via script on Windows
+    runs-on: windows-latest
+    steps:
+      - run: '[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; iex ((New-Object System.Net.WebClient).DownloadString("https://get.codeinfra.com/install.ps1")) && SET \"PATH=%PATH%;%USERPROFILE%\.codeinfra\bin\"'
+        shell: pwsh
+      - run: echo "C:/Users/runneradmin/.codeinfra/bin" >> "${GITHUB_PATH}"
+        shell: bash
+      - name: Codeinfra Version Details
+        id: vars
+        shell: bash
+        run: |
+          echo "installed-version=$(codeinfra version)" >> "${GITHUB_OUTPUT}"
+          echo "expected-version=v$(curl -sS https://www.codeinfra.com/latest-version)" >> "${GITHUB_OUTPUT}"
+      - name: Error if incorrect version found
+        if: ${{ steps.vars.outputs.expected-version != steps.vars.outputs.installed-version }}
+        run: |
+          echo "Expected version ${{ steps.vars.outputs.expected-version }} but found ${{ steps.vars.outputs.installed-version }}"
+          exit 1
+  windows-verify-download-link:
+    name: Verify Direct Download link on Windows
+    runs-on: windows-latest
+    steps:
+      - name: Direct Download
+        shell: pwsh
+        run: |
+          $latestVersion = (Invoke-WebRequest -UseBasicParsing https://www.codeinfra.com/latest-version).Content.Trim()
+          $downloadUrl = "https://get.codeinfra.com/releases/sdk/codeinfra-v${latestVersion}-windows-x64.zip"
+          $tempZip = New-Item -Type File (Join-Path $env:TEMP ([System.IO.Path]::ChangeExtension(([System.IO.Path]::GetRandomFileName()), "zip")))
+          Invoke-WebRequest https://get.codeinfra.com/releases/sdk/codeinfra-v${latestVersion}-windows-x64.zip -OutFile $tempZip
+      - run: ls -la
+        shell: bash
+  windows-verify-msi-download-link:
+    name: Verify Direct MSI Download link on Windows
+    runs-on: windows-latest
+    steps:
+      - name: Direct Download
+        shell: pwsh
+        run: |
+          $latestVersion = (Invoke-WebRequest -UseBasicParsing https://www.codeinfra.com/latest-version).Content.Trim()
+          $tempMsi = New-Item -Type File (Join-Path $env:TEMP ([System.IO.Path]::ChangeExtension(([System.IO.Path]::GetRandomFileName()), "msi")))
+          Invoke-WebRequest https://github.com/khulnasoft/codeinfra-winget/releases/download/v${latestVersion}/codeinfra-${latestVersion}-windows-x64.msi -OutFile $tempMsi
+      - run: ls -la
+        shell: bash
+  install-via-gha:
+    name: Install via GHA on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: ["ubuntu-latest", "windows-latest", "macos-13"]
+    steps:
+      - name: Install Codeinfra CLI
+        uses: codeinfra/action-install-codeinfra-cli@v1.0.1
+      - name: Codeinfra Version Details
+        id: vars
+        run: |
+          echo "installed-version=$(codeinfra version)" >> "${GITHUB_OUTPUT}"
+          echo "expected-version=v$(curl -sS https://www.codeinfra.com/latest-version)" >> "${GITHUB_OUTPUT}"
+      - name: Error if incorrect version found
+        if: ${{ steps.vars.outputs.expected-version != steps.vars.outputs.installed-version }}
+        run: |
+          echo "Expected version ${{ steps.vars.outputs.expected-version }} but found ${{ steps.vars.outputs.installed-version }}"
+          exit 1

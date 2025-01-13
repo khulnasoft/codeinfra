@@ -1,0 +1,4 @@
+*.pyc
+/.codeinfra/
+/dist/
+/*.egg-info

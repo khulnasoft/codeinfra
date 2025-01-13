@@ -1,0 +1,13 @@
+<{%fg 13%}><{%bold%}>View Live: <{%underline%}><{%fg 12%}>http://example.com<{%reset%}>
+
+
+ <{%bold%}><{%reset%}>  <{%reset%}> pkgParent:codeinfra:typParent parent <{%bold%}><{%reset%}><{%reset%}> 
+ <{%bold%}><{%reset%}>  <{%reset%}> codeinfra:providers:pkgA prov <{%bold%}><{%reset%}><{%reset%}> 
+ <{%bold%}><{%reset%}>  <{%reset%}> pkgA:index:typA res <{%bold%}><{%reset%}><{%reset%}> 
+ <{%reset%}>  <{%reset%}> pkgParent:codeinfra:typParent parent <{%reset%}><{%reset%}> 
+ <{%reset%}>  <{%reset%}> codeinfra:codeinfra:Stack project-stack <{%reset%}><{%reset%}> 
+<{%fg 13%}><{%bold%}>Resources:<{%reset%}>
+    3 unchanged
+
+<{%fg 13%}><{%bold%}>Duration:<{%reset%}> 1s
+

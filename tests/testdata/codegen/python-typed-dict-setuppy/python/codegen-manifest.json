@@ -1,0 +1,15 @@
+{
+  "emittedFiles": [
+    "codeinfra_typedDictExample/README.md",
+    "codeinfra_typedDictExample/__init__.py",
+    "codeinfra_typedDictExample/_inputs.py",
+    "codeinfra_typedDictExample/_utilities.py",
+    "codeinfra_typedDictExample/component.py",
+    "codeinfra_typedDictExample/my_function.py",
+    "codeinfra_typedDictExample/outputs.py",
+    "codeinfra_typedDictExample/provider.py",
+    "codeinfra_typedDictExample/codeinfra-plugin.json",
+    "codeinfra_typedDictExample/py.typed",
+    "setup.py"
+  ]
+}

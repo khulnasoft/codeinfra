@@ -1,0 +1,28 @@
+{
+  "emittedFiles": [
+    "codeinfra_kubernetes/README.md",
+    "codeinfra_kubernetes/__init__.py",
+    "codeinfra_kubernetes/_inputs.py",
+    "codeinfra_kubernetes/_utilities.py",
+    "codeinfra_kubernetes/core/__init__.py",
+    "codeinfra_kubernetes/core/v1/ConfigMap.py",
+    "codeinfra_kubernetes/core/v1/ConfigMapList.py",
+    "codeinfra_kubernetes/core/v1/__init__.py",
+    "codeinfra_kubernetes/core/v1/_inputs.py",
+    "codeinfra_kubernetes/core/v1/outputs.py",
+    "codeinfra_kubernetes/helm/__init__.py",
+    "codeinfra_kubernetes/helm/v3/Release.py",
+    "codeinfra_kubernetes/helm/v3/__init__.py",
+    "codeinfra_kubernetes/meta/__init__.py",
+    "codeinfra_kubernetes/meta/v1/__init__.py",
+    "codeinfra_kubernetes/meta/v1/_inputs.py",
+    "codeinfra_kubernetes/meta/v1/outputs.py",
+    "codeinfra_kubernetes/provider.py",
+    "codeinfra_kubernetes/codeinfra-plugin.json",
+    "codeinfra_kubernetes/py.typed",
+    "codeinfra_kubernetes/yaml/__init__.py",
+    "codeinfra_kubernetes/yaml/v2/ConfigGroup.py",
+    "codeinfra_kubernetes/yaml/v2/__init__.py",
+    "pyproject.toml"
+  ]
+}

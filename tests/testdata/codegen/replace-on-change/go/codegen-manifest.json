@@ -1,0 +1,16 @@
+{
+  "emittedFiles": [
+    "example/cat.go",
+    "example/doc.go",
+    "example/dog.go",
+    "example/god.go",
+    "example/init.go",
+    "example/internal/codeinfraUtilities.go",
+    "example/internal/codeinfraVersion.go",
+    "example/noRecursive.go",
+    "example/provider.go",
+    "example/codeinfra-plugin.json",
+    "example/codeinfraTypes.go",
+    "example/toyStore.go"
+  ]
+}

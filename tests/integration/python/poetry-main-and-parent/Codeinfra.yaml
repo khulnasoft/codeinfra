@@ -1,0 +1,7 @@
+name: codeinfra-python-poetry-main
+description: A simple Python Codeinfra program that uses Poetry, the pyproject.toml file is in the program folder (./src)
+runtime:
+  name: python
+  options:
+    toolchain: poetry
+main: src

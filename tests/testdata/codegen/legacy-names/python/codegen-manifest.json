@@ -1,0 +1,15 @@
+{
+  "emittedFiles": [
+    "codeinfra_legacy_names/README.md",
+    "codeinfra_legacy_names/__init__.py",
+    "codeinfra_legacy_names/_enums.py",
+    "codeinfra_legacy_names/_utilities.py",
+    "codeinfra_legacy_names/example_resource.py",
+    "codeinfra_legacy_names/http_module/__init__.py",
+    "codeinfra_legacy_names/http_module/_inputs.py",
+    "codeinfra_legacy_names/provider.py",
+    "codeinfra_legacy_names/codeinfra-plugin.json",
+    "codeinfra_legacy_names/py.typed",
+    "setup.py"
+  ]
+}

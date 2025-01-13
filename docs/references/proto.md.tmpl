@@ -1,0 +1,51 @@
+{{- range .Files -}}
+# {{ .TitleFromPython }}
+<gh-file:codeinfra#proto/{{ .Name }}>
+
+{{ if .Services -}}
+## Services
+{{- range .Services -}}
+{{- $ServiceName := .FullName }}
+
+({{ .FullName }})=
+### 🔌 {{ .Name }}
+{{ .Description }}
+
+{{ range .Methods }}
+({{ $ServiceName }}.{{ .Name }})=
+#### 📞 {{ .Name }}
+
+⤵️ [{{ .RequestLongType }}](#{{ .RequestFullType }}) ⤴️ [{{ .ResponseLongType }}](#{{ .ResponseFullType }})
+
+{{ .Description }}
+
+{{ end }}{{- /* range .Methods */ -}}
+
+{{ end }}{{- /* range .Services */ -}}
+
+{{ end }}{{- /* if .Services */ -}}
+
+{{ if .Messages -}}
+## Messages
+{{ range .Messages -}}
+{{- $MessageName := .FullName -}}
+
+({{ .FullName }})=
+### 📨 {{ .Name }}
+{{ .Description }}
+
+{{ range .Fields }}
+`{{ .Name }}` [{{ .LongType }}](#{{ .FullType }})
+: {{ if .Description -}}
+    {{ .Description | indent 2 }}
+  {{- else -}}
+    &lt;No description&gt;
+  {{- end }}
+
+{{ end }}{{- /* range .Fields */ -}}
+
+{{ end }}{{- /* range .Messages */ -}}
+
+{{ end }}{{- /* if .Messages */ -}}
+
+{{ end }}{{- /* range .Files */ -}}

@@ -1,0 +1,19 @@
+{
+  "emittedFiles": [
+    "codeinfra_example/README.md",
+    "codeinfra_example/__init__.py",
+    "codeinfra_example/_inputs.py",
+    "codeinfra_example/_utilities.py",
+    "codeinfra_example/arg_function.py",
+    "codeinfra_example/bar_resource.py",
+    "codeinfra_example/foo_resource.py",
+    "codeinfra_example/other_resource.py",
+    "codeinfra_example/outputs.py",
+    "codeinfra_example/provider.py",
+    "codeinfra_example/codeinfra-plugin.json",
+    "codeinfra_example/py.typed",
+    "codeinfra_example/resource.py",
+    "codeinfra_example/type_uses.py",
+    "setup.py"
+  ]
+}

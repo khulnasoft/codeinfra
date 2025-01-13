@@ -1,0 +1,27 @@
+View in Browser (Ctrl+O): link
+
+     Type                               Name      Status                  Info
+     codeinfra:codeinfra:Stack                test-dev                          1 mes
+ --  ├─ codeinfra-python:dynamic:Resource  test-r    deleted original        
+ ~   └─ codeinfra-python:dynamic:Resource  test-x    **updating failed**     
+
+Changes:
+  codeinfra-python:dynamic:Resource (test-r):
+    --codeinfra-python:dynamic:Resource: (delete-replaced)
+        [id=foo]
+        [urn=urn:codeinfra:dev::test::codeinfra-python:dynamic:Resource::test-r]
+
+  codeinfra-python:dynamic:Resource (test-x):
+    ~ codeinfra-python:dynamic:Resource: (update)
+        [id=quux2]
+        [urn=urn:codeinfra:dev::test::codeinfra-python:dynamic:Resource::test-x]
+
+Diagnostics:
+  codeinfra:codeinfra:Stack (test-dev):
+    Configuration:
+
+Resources:
+    1 unchanged
+
+Duration: 8s
+

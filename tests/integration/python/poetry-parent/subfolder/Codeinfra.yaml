@@ -1,0 +1,6 @@
+name: codeinfra-python-poetry-parent
+description: A simple Python Codeinfra program that uses Poetry, with the pyproject.toml file in a parent folder
+runtime:
+  name: python
+  options:
+    toolchain: poetry

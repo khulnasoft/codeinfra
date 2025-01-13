@@ -1,0 +1,17 @@
+{
+  "emittedFiles": [
+    "example/argFunction.go",
+    "example/barResource.go",
+    "example/doc.go",
+    "example/fooResource.go",
+    "example/init.go",
+    "example/internal/codeinfraUtilities.go",
+    "example/internal/codeinfraVersion.go",
+    "example/otherResource.go",
+    "example/provider.go",
+    "example/codeinfra-plugin.json",
+    "example/codeinfraTypes.go",
+    "example/resource.go",
+    "example/typeUses.go"
+  ]
+}

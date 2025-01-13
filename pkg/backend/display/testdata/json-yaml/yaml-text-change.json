@@ -1,0 +1,64 @@
+{
+    "sequence": 0,
+    "timestamp": 1677074634,
+    "preludeEvent": {
+        "config": {}
+    }
+}
+{
+    "sequence": 3,
+    "timestamp": 1677074634,
+    "resourcePreEvent": {
+        "metadata": {
+            "op": "update",
+            "urn": "urn:codeinfra:dev::codeinfra-stack-output-diff::codeinfra:codeinfra:Stack::codeinfra-stack-output-diff-dev",
+            "type": "codeinfra:codeinfra:Stack",
+            "old": {
+                "type": "codeinfra:codeinfra:Stack",
+                "urn": "urn:codeinfra:dev::codeinfra-stack-output-diff::codeinfra:codeinfra:Stack::codeinfra-stack-output-diff-dev",
+                "id": "",
+                "parent": "",
+                "inputs": {},
+                "outputs": {
+                    "vehicles": {
+                        "taxi": "color: yellow\ntype: car"
+                    }
+                },
+                "provider": ""
+            },
+            "new": {
+                "type": "codeinfra:codeinfra:Stack",
+                "urn": "urn:codeinfra:dev::codeinfra-stack-output-diff::codeinfra:codeinfra:Stack::codeinfra-stack-output-diff-dev",
+                "id": "",
+                "parent": "",
+                "inputs": {},
+                "outputs": {
+                    "vehicles": {
+                        "taxi": "# a comment\ncolor: yellow  \ntype: car"
+                    }
+                },
+                "provider": ""
+            },
+            "logical": true,
+            "provider": ""
+        },
+        "planning": true
+    }
+}
+{
+    "sequence": 21,
+    "timestamp": 1677074635,
+    "summaryEvent": {
+        "maybeCorrupt": false,
+        "durationSeconds": 0,
+        "resourceChanges": {
+            "update": 1
+        },
+        "PolicyPacks": {}
+    }
+}
+{
+    "sequence": 22,
+    "timestamp": 1677074635,
+    "cancelEvent": {}
+}

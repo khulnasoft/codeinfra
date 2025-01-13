@@ -1,0 +1,86 @@
+name: Post-Release Homebrew Tap
+
+permissions:
+  contents: read
+
+on:
+  workflow_call:
+    inputs:
+      ref:
+        required: true
+        description: "GitHub ref to use"
+        type: string
+      version:
+        required: true
+        description: "Version to produce"
+        type: string
+      dry-run:
+        required: false
+        default: true
+        description: "Whether to run in dry-run mode and skip pushing the commit"
+        type: boolean
+  workflow_dispatch:
+    inputs:
+      ref:
+        required: true
+        description: "GitHub ref to use"
+        type: string
+      version:
+        required: true
+        description: "Version to produce"
+        type: string
+      dry-run:
+        required: false
+        default: true
+        description: "Whether to run in dry-run mode and skip pushing the commit"
+        type: boolean
+
+env:
+  CODEINFRA_VERSION: ${{ inputs.version }}
+  GITHUB_TOKEN: ${{ secrets.CODEINFRA_BOT_TOKEN }}
+
+jobs:
+  update-homebrew-tap:
+    name: Update Homebrew Tap
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.ref }}
+          path: codeinfra
+      - name: Checkout tap repo
+        uses: actions/checkout@v4
+        with:
+          repository: codeinfra/homebrew-tap
+          path: homebrew-tap
+          token: ${{ secrets.CODEINFRA_BOT_TOKEN }}
+      - name: Update Homebrew Tap
+        run: |
+          set -euo pipefail
+
+          # Can simulate this by cloning codeinfra/codeinfra & codeinfra/homebrew-tap to adacent directories
+          # and running from their parent:
+
+          ./codeinfra/.github/scripts/generate-homebrew-tap \
+            "${CODEINFRA_VERSION}" ./codeinfra/.github/scripts/codeinfra-tap-template.rb \
+            > ./homebrew-tap/Formula/codeinfra.rb
+      - name: Commit updated formula
+        working-directory: homebrew-tap
+        run: |
+          set -euo pipefail
+
+          git config user.name codeinfra-bot
+          git config user.email bot@codeinfra.com
+          git add Formula/codeinfra.rb
+          echo "::group::git diff"
+          git  --no-pager diff
+          echo "::endgroup::"
+          git commit -m "Brew formula update for Codeinfra version ${CODEINFRA_VERSION}"
+      - name: Push formula
+        working-directory: homebrew-tap
+        if: ${{ !inputs.dry-run }}
+        run: |
+          set -euo pipefail
+
+          git push origin HEAD:main

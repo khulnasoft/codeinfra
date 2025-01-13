@@ -1,0 +1,12 @@
+{
+  "emittedFiles": [
+    "mongodbatlas/doc.go",
+    "mongodbatlas/getCustomDbRoles.go",
+    "mongodbatlas/init.go",
+    "mongodbatlas/internal/codeinfraUtilities.go",
+    "mongodbatlas/internal/codeinfraVersion.go",
+    "mongodbatlas/provider.go",
+    "mongodbatlas/codeinfra-plugin.json",
+    "mongodbatlas/codeinfraTypes.go"
+  ]
+}

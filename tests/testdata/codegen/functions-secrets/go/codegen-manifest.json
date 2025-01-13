@@ -1,0 +1,11 @@
+{
+  "emittedFiles": [
+    "mypkg/doc.go",
+    "mypkg/funcWithSecrets.go",
+    "mypkg/init.go",
+    "mypkg/internal/codeinfraUtilities.go",
+    "mypkg/internal/codeinfraVersion.go",
+    "mypkg/provider.go",
+    "mypkg/codeinfra-plugin.json"
+  ]
+}

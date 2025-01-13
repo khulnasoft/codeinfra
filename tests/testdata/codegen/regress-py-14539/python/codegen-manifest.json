@@ -1,0 +1,20 @@
+{
+  "emittedFiles": [
+    "codeinfra_gcp/README.md",
+    "codeinfra_gcp/__init__.py",
+    "codeinfra_gcp/_utilities.py",
+    "codeinfra_gcp/compute/__init__.py",
+    "codeinfra_gcp/compute/instance/__init__.py",
+    "codeinfra_gcp/compute/instance/instance.py",
+    "codeinfra_gcp/compute/instancebootdisk/__init__.py",
+    "codeinfra_gcp/compute/instancebootdisk/_inputs.py",
+    "codeinfra_gcp/compute/instancebootdisk/outputs.py",
+    "codeinfra_gcp/compute/instancebootdiskinitializeparams/__init__.py",
+    "codeinfra_gcp/compute/instancebootdiskinitializeparams/_inputs.py",
+    "codeinfra_gcp/compute/instancebootdiskinitializeparams/outputs.py",
+    "codeinfra_gcp/provider.py",
+    "codeinfra_gcp/codeinfra-plugin.json",
+    "codeinfra_gcp/py.typed",
+    "pyproject.toml"
+  ]
+}

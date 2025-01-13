@@ -1,0 +1,3 @@
+name: codeinfra-python-venv
+description: A simple Python Codeinfra program that needs a venv to run.
+runtime: python

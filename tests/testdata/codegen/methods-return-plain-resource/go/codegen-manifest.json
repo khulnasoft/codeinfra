@@ -1,0 +1,11 @@
+{
+  "emittedFiles": [
+    "metaprovider/configurer.go",
+    "metaprovider/doc.go",
+    "metaprovider/init.go",
+    "metaprovider/internal/codeinfraUtilities.go",
+    "metaprovider/internal/codeinfraVersion.go",
+    "metaprovider/provider.go",
+    "metaprovider/codeinfra-plugin.json"
+  ]
+}

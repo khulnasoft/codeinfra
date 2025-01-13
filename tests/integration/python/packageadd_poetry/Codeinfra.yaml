@@ -1,0 +1,10 @@
+name: packageadd_poetry
+description: A minimal Google Cloud Python Codeinfra program
+runtime:
+  name: python
+  options:
+    toolchain: poetry
+config:
+  codeinfra:tags:
+    value:
+      codeinfra:template: gcp-python

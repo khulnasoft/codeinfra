@@ -1,0 +1,13 @@
+{
+  "emittedFiles": [
+    "codeinfra_providerType/README.md",
+    "codeinfra_providerType/__init__.py",
+    "codeinfra_providerType/_utilities.py",
+    "codeinfra_providerType/provider.py",
+    "codeinfra_providerType/codeinfra-plugin.json",
+    "codeinfra_providerType/py.typed",
+    "codeinfra_providerType/submod/__init__.py",
+    "codeinfra_providerType/submod/provider.py",
+    "setup.py"
+  ]
+}
